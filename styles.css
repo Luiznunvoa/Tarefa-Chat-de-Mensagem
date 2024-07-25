@@ -33,7 +33,7 @@ header {
    font-size: 2vh;
 }
 
-/*Estilizaçao do Chat*/
+/*Estilizaçao do Chatbx*/
 
 .chatbox {
    height: 75%;
@@ -43,15 +43,22 @@ header {
    flex-direction: column;
    flex-wrap: nowrap;
    border: solid;
+   border-top: 0;
    border-color: #555555;
    margin-top: 2%;
    overflow:scroll;
 }
 
+/*Estilizaçao do cabeçalho do chat*/
+
 .chatbox header {
    height: 12%;
-   background-color: #555555;
+   border: solid;
+   border-color: #555555;
+   z-index: 2;
 }
+
+/*Estilizaçao do histórico de mensagens*/
 
 .chathist {
    position: relative;
@@ -63,6 +70,8 @@ header {
    flex-wrap: nowrap;
    align-items: flex-start;
 }
+
+/*Elementos da mensagem que será criada a partir do DOM*/
 
 .msn {
    margin-top: 1vh;
@@ -105,22 +114,22 @@ header {
    flex-wrap: nowrap;
  }
 
- .dele {
+ .cards input {
    position: relative;
    height: 50%;
    width: 100%;
    border: none;
+ }
+
+ .dele {
    background-color: brown;
  }
 
  .edit {
-   position: relative;
-   height: 50%;
-   width: 100%;
-   border: none;
    background-color: rgb(165, 112, 42);
  }
 
+ /*Barra de envio de mensagens*/
 
 .msnbar {
    position: absolute;
@@ -136,7 +145,6 @@ header {
    align-items: center;
    justify-content: center;
 }
-
 
 .textbox {
    height: 80%;
