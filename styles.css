@@ -55,7 +55,7 @@ header {
 
 .chathist {
    position: relative;
-   height: 100vh;
+   height: 100h;
    width: 100%;
    background-color: rgb(250, 250, 250);
    display: flex;
@@ -85,8 +85,8 @@ header {
  }
 
  .note {
-   height: 10vh;
-   width: 50vh;
+   height: 7.5vh;
+   width: 35vh;
    border-radius: 1vh;
    background-color: #C4C4C4;
    display: flex;
@@ -94,6 +94,33 @@ header {
    flex-direction: column;
    justify-content: center;
  }
+
+ .cards {
+   position: relative;
+   bottom: 0%;
+   height: 4vh;
+   width: 5vh;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+ }
+
+ .dele {
+   position: relative;
+   height: 50%;
+   width: 100%;
+   border: none;
+   background-color: brown;
+ }
+
+ .edit {
+   position: relative;
+   height: 50%;
+   width: 100%;
+   border: none;
+   background-color: rgb(165, 112, 42);
+ }
+
 
 .msnbar {
    position: absolute;
