@@ -15,6 +15,7 @@ main {
    display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
+   align-items: center;
    background-color: #F3F3F3;
 }
 
@@ -25,8 +26,28 @@ header {
    height: 13.6%;
    width: 100%;
    display: inline-flex;
-   justify-content: space-between;
+   justify-content: center;
+   align-items: center;
    background-color: #C4C4C4;
    box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
    font-size: 2vh;
+}
+
+/*Estilizaçao do Chat*/
+
+.chatbox {
+   height: 75%;
+   width: 80%;
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   border: solid;
+   border-color: #555555;
+   margin-top: 2%;
+   overflow: hidden;
+}
+
+.chatbox header {
+   background-color: #555555;
 }
