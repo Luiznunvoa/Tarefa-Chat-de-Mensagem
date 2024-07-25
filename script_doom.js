@@ -15,9 +15,29 @@ function enviar() {
    note.classList.add('note');
    note.textContent = mensagem;
 
-   // Adiciona a seta e a nota na nova mensagem
+   // Cria o elemento cards
+   const cards = document.createElement("div");
+   cards.classList.add('cards');
+
+   // Cria os inputs dentro de cards
+   const inputDele = document.createElement("input");
+   inputDele.classList.add('dele');
+   inputDele.type = 'button';
+   inputDele.value = 'deletar';
+
+   const inputEdit = document.createElement("input");
+   inputEdit.classList.add('edit');
+   inputEdit.type = 'button';
+   inputEdit.value = 'editar';
+
+   // Adiciona os inputs ao elemento cards
+   cards.appendChild(inputDele);
+   cards.appendChild(inputEdit);
+
+   // Adiciona a seta, a nota e o cards na nova mensagem
    novaMensgem.appendChild(arrow);
    novaMensgem.appendChild(note);
+   novaMensgem.appendChild(cards);
 
    // Seleciona o chatbox existente no DOM
    const main = document.getElementById("chatbox"); // Certifique-se de que o elemento tenha esse ID
