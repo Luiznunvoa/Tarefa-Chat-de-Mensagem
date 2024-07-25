@@ -47,4 +47,17 @@ function enviar() {
    } else {
        console.error("Elemento chatbox não encontrado!");
    }
+
+   // Adiciona evento de clique ao botão de deletar
+   inputDele.addEventListener('click', function() {
+       main.removeChild(novaMensgem);
+   });
+
+   // Adiciona evento de clique ao botão de editar
+   inputEdit.addEventListener('click', function() {
+       var newMessage = prompt("Edite sua mensagem:", note.textContent);
+       if (newMessage !== null) {
+           note.textContent = newMessage;
+       }
+   });
 }
