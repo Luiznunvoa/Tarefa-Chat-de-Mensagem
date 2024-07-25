@@ -1,0 +1,32 @@
+/*Estilização do corpo da página*/
+
+body {
+   margin: 0;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 1vh;
+}
+
+/*Estilização do fundo da página*/
+
+main {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   background-color: #F3F3F3;
+}
+
+/*Estilizaçao do cabeçalho*/
+
+header {
+   position: relative;
+   height: 13.6%;
+   width: 100%;
+   display: inline-flex;
+   justify-content: space-between;
+   background-color: #C4C4C4;
+   box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
+   font-size: 2vh;
+}
